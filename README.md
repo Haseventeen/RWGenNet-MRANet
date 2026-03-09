@@ -122,3 +122,13 @@ The collected multi-modal physiological signal datasets (ECG, SCG, and respirati
 
 ### Code availability
 The code used in this study is available via GitHub at https://github.com/Haseventeen/RWGenNet-MRANet.
+
+### 🤝 Contributors
+
+Special thanks to the following contributor for their valuable support and suggestions:
+
+<a href="https://github.com/wangkaikaikai">
+  <img src="https://github.com/wangkaikaikai.png" width="60px;" style="border-radius:50%;" alt="wangkaikaikai"/>
+  <br />
+  <sub><b>@wangkaikaikai</b></sub>
+</a>
