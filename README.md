@@ -116,3 +116,9 @@ Both networks heavily rely on the **TSSA (Temporal Spatial Self-Attention)** mod
 ### Multi-Scale Discriminator
 
 In the generative task, the discriminator (`MultiScaleDiscriminator`) employs an ensemble of three `NLayerDiscriminator1D` instances with varying base channel capacities (`ndf`, `ndf*2`, `ndf*4`). This allows the model to scrutinize the generated 1D signals at different representation levels simultaneously.
+
+### Data availability
+The collected multi-modal physiological signal datasets (ECG, SCG, and respiration) used in this study are available via GitHub at [你的GitHub链接]. Further data that supports the plots within this paper and other findings of this study are available from the corresponding author upon request.
+
+### Code availability
+The code used in this study is available via GitHub at https://github.com/Haseventeen/RWGenNet-MRANet.
