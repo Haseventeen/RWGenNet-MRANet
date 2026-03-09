@@ -2,7 +2,7 @@
 
 # Multi-Modal ECG Analysis and Signal Generation Framework
 
-This repository contains the official PyTorch implementation for a dual-purpose physiological signal processing framework. It includes a **Classification Network (MRANet)** for multi-modal signal diagnosis (ECG, SCG, Resp) and a **Generative Network (Pix2Pix-based)** for 1D physiological signal translation (e.g., ECG to ABP).
+This repository contains the official PyTorch implementation for a dual-purpose physiological signal processing framework. It includes a **Classification Network (MRANet)** for multi-modal signal diagnosis (ECG, SCG, Resp) and a **Generative Network (Pix2Pix-based)** for 1D physiological signal translation (e.g., ECG to Resp).
 
 ## 🚀 Features
 
