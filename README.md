@@ -1,12 +1,12 @@
 
 
-# Multi-Modal ECG Analysis and Signal Generation Framework
+# Multi-Modal Fusion and RW Signal Generation Framework
 
-This repository contains the official PyTorch implementation for a dual-purpose physiological signal processing framework. It includes a **Classification Network (MRANet)** for multi-modal signal diagnosis (ECG, SCG, Resp) and a **Generative Network (Pix2Pix-based)** for 1D physiological signal translation (e.g., ECG to Resp).
+This repository contains the official PyTorch implementation for a dual-purpose physiological signal processing framework. It includes a **Classification Network (MRANet)** for multi-modal signal fusion (ECG, SCG, RW) and a **Generative Network (Pix2Pix-based)** for 1D physiological signal translation (e.g., ECG to RW).
 
 ## 🚀 Features
 
-* **Multi-Modal Classification (MRANet)**
+* **Multi-modal ResNet Attention Network  (MRANet)**
 * Fuses 1D signals (ECG, SCG, Respiration) using parallel ResNet1D encoders.
 * Employs a custom **TSSA Attention Module (Non-Causal)** for effective cross-modal feature interaction.
 * Addresses class imbalance using a Cost-Sensitive Learning strategy with Weighted Binary Cross-Entropy (WBCE, $\mathcal{L}_{cls}$) and an automated `Target Boost Sampler`.
@@ -118,7 +118,7 @@ Both networks heavily rely on the **TSSA (Temporal Spatial Self-Attention)** mod
 In the generative task, the discriminator (`MultiScaleDiscriminator`) employs an ensemble of three `NLayerDiscriminator1D` instances with varying base channel capacities (`ndf`, `ndf*2`, `ndf*4`). This allows the model to scrutinize the generated 1D signals at different representation levels simultaneously.
 
 ### Data availability
-The collected multi-modal physiological signal datasets (ECG, SCG, and respiration) used in this study are available via GitHub at [你的GitHub链接]. Further data that supports the plots within this paper and other findings of this study are available from the corresponding author upon request.
+Data supporting the findings of this study are available within the paper and its supplementary information files. Further data that supports the plots within this paper and other findings of this study are available from the corresponding author upon request. The BIDMC Dataset is available at: https://physionet.org/content/bidmc/1.0.0/. The CapnoBase Dataset is available at: https://borealisdata.ca/dataverse/capnobase. The Fantasia Dataset is available at: https://physionet.org/content/fantasia/1.0.0/.
 
 ### Code availability
 The code used in this study is available via GitHub at https://github.com/Haseventeen/RWGenNet-MRANet.
